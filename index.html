@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue master</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  
+  <body>
+    <div id="app">
+      <img :class="gender" v-bind:src="picture" :alt="firstName">
+      <h1> {{firstName}} {{lastName}} </h1>
+      <h3> {{email}} </h3>
+      <button :class="gender" v-on:click="getUser()"> get random user</button>
+    </div>
+    
+    <!-- IMport App -->
+    <script src="app.js"></script>
+    
+    <!-- Import Vue.js -->
+  </body>
+</html>
